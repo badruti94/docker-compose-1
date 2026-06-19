@@ -19,7 +19,15 @@ services:
     depends_on:
       - mongodb-example
     ports:
-      - "8081:8081"
+      - "8083:8081"
+    deploy:
+      resources:
+        reservations:
+          cpus: "0.25"
+          memory: 50M
+        limits:
+          cpus: "0.5"
+          memory: 100M
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: khannedy
       ME_CONFIG_MONGODB_ADMINPASSWORD: khannedy
