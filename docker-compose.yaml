@@ -4,3 +4,6 @@ services:
   nginx-example:
     container_name: nginx-example
     image: nginx:latest
+  mongo-example:
+    container_name: mongo-example
+    image: mongo:latest
