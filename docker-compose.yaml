@@ -15,6 +15,7 @@ services:
   mongodb-express-example:
     container_name: mongodb-express-example
     image: mongo-express:latest
+    restart: always
     depends_on:
       - mongodb-example
     ports:
