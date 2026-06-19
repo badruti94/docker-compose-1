@@ -10,3 +10,10 @@ services:
       MONGO_INITDB_ROOT_USERNAME: khannedy
       MONGO_INITDB_ROOT_PASSWORD: khannedy
       MONGO_INITDB_DATABASE: admin
+    volumes:
+      - "mongo-data1:/data/db"
+volumes:
+  mongo-data1:
+    name: mongo-data1
+  mongo-data2:
+    name: mongo-data2
